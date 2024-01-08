@@ -9,7 +9,7 @@ inquirer
       type: "input",
       name: "text",
       message:
-        "What text do you want insider you Logo? (Cannot be more than 3 characters)",
+        "What text do you want insider your Logo? (Cannot be more than 3 characters)",
     },
     {
       type: "list",
@@ -77,7 +77,7 @@ inquirer
       case "Triangle":
         fs.writeFile(
           "logo.svg",
-          new triangle(shapeColor, text, textColorValue).createTriangle(),
+          new triangle(shapeColor, text.slice(0,3), textColorValue).createTriangle(),
           (err) => {
             if (err) {
               console.log(err);
@@ -90,7 +90,7 @@ inquirer
       case "Square":
         fs.writeFile(
           "logo.svg",
-          new square(shapeColor, text, textColorValue).createSquare(),
+          new square(shapeColor, text.slice(0,3), textColorValue).createSquare(),
           (err) => {
             if (err) {
               console.log(err);
@@ -103,7 +103,7 @@ inquirer
       case "Circle":
         fs.writeFile(
           "logo.svg",
-          new circle(shapeColor, text, textColorValue).createCircle(),
+          new circle(shapeColor,text.slice(0,3), textColorValue).createCircle(),
           (err) => {
             if (err) {
               console.log(err);
