@@ -59,7 +59,6 @@ inquirer
   .then((data) => {
     let { textColorValue, textColorCode } = data;
     if (textColorCode == "Hexidecimal Number") {
-      console.log("yes");
       console.log(textColorValue.split(""));
       data.textColorValue = data.textColorValue.split("");
       data.textColorValue.unshift("#");
@@ -70,14 +69,17 @@ inquirer
     return data;
   })
   .then((data) => {
-    console.log(data);
     let { shape, text, shapeColor, textColorValue } = data;
 
     switch (shape) {
       case "Triangle":
         fs.writeFile(
           "logo.svg",
-          new triangle(shapeColor, text.slice(0,3), textColorValue).createTriangle(),
+          new triangle(
+            shapeColor,
+            text.slice(0, 3),
+            textColorValue
+          ).createTriangle(),
           (err) => {
             if (err) {
               console.log(err);
@@ -90,7 +92,11 @@ inquirer
       case "Square":
         fs.writeFile(
           "logo.svg",
-          new square(shapeColor, text.slice(0,3), textColorValue).createSquare(),
+          new square(
+            shapeColor,
+            text.slice(0, 3),
+            textColorValue
+          ).createSquare(),
           (err) => {
             if (err) {
               console.log(err);
@@ -103,7 +109,11 @@ inquirer
       case "Circle":
         fs.writeFile(
           "logo.svg",
-          new circle(shapeColor,text.slice(0,3), textColorValue).createCircle(),
+          new circle(
+            shapeColor,
+            text.slice(0, 3),
+            textColorValue
+          ).createCircle(),
           (err) => {
             if (err) {
               console.log(err);
