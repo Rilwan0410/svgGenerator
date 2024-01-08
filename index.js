@@ -1,13 +1,16 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const shapes = require("./lib/shapes");
+const { triangle, circle, square } = shapes;
 
+console.log(shapes);
 inquirer
   .prompt([
     {
-      type: "number",
+      type: "input",
       name: "text",
       message:
-        "How many characters do you want into your logo? (cannot be more than three characters)",
+        "What text do you want inside you Logo? (cannot be more than three characters)",
     },
     {
       type: "list",
@@ -69,13 +72,47 @@ inquirer
   })
   .then((data) => {
     console.log(data);
-    let filename = "logo.svg";
+    let { shape, text, shapeColor, textColorValue } = data;
 
-    fs.writeFile(filename, `hi`, (err) => {
-        if(err){
-            console.log(err)
-        }else {
-            console.log('Generated logo.svg')
-        }
-    });
+    switch (shape) {
+      case "Triangle":
+        fs.writeFile(
+          "logo.svg",
+          new triangle(shapeColor, text, textColorValue).createTriangle(),
+          (err) => {
+            if (err) {
+              console.log(err);
+            } else {
+              console.log("Generated logo.svg");
+            }
+          }
+        );
+        break;
+      case "Square":
+        fs.writeFile(
+          "logo.svg",
+          new square(shapeColor, text, textColorValue).createSquare(),
+          (err) => {
+            if (err) {
+              console.log(err);
+            } else {
+              console.log("Generated logo.svg");
+            }
+          }
+        );
+        break;
+      case "Circle":
+        fs.writeFile(
+          "logo.svg",
+          new circle(shapeColor, text, textColorValue).createCircle(),
+          (err) => {
+            if (err) {
+              console.log(err);
+            } else {
+              console.log("Generated logo.svg");
+            }
+          }
+        );
+        break;
+    }
   });
