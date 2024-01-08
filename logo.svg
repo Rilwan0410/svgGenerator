@@ -1,6 +1,0 @@
-
-    <svg  xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 100 100">
-    <polygon points="50 15, 100 100, 0 100" fill="purple"/>
-    <text x="50" y="70" fill="#fff" text-anchor="middle" alignment-baseline="central">PIG</text>
-  </svg>
-    

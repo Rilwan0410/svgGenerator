@@ -3,14 +3,13 @@ const fs = require("fs");
 const shapes = require("./lib/shapes");
 const { triangle, circle, square } = shapes;
 
-console.log(shapes);
 inquirer
   .prompt([
     {
       type: "input",
       name: "text",
       message:
-        "What text do you want inside you Logo? (cannot be more than three characters)",
+        "What text do you want insider you Logo? (Cannot be more than 3 characters)",
     },
     {
       type: "list",
