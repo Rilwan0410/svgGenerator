@@ -11,3 +11,9 @@ Run index.js inside of the command line to run app
 ## Usage
 
 Fill in the required fields asking you how you would like to style your SVG. Once all questions have been answers with valid inputs, a logo.svg file will automatically be generated allowing you to open the svg in the browser to see how it looks.
+
+## Links
+
+Link to Video Demo: file:///Users/user/Downloads/Untitled_%20Jan%207,%202024%208_30%20PM.webm 
+
+Link to GitHub Repo: https://github.com/Rilwan0410/svgGenerator 
