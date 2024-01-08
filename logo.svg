@@ -1,14 +1,6 @@
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-      <circle cx="110" cy="100" r="90" fill="brown" />
-      <text
-        x="38%"
-        y="50%"
-        fill="white"
-        font-size="50"
-        text-anchor="middle"
-        alignment-baseline="central"
-      >
-       LIV
-      </text>
-    </svg>
+    <svg  xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 100 100">
+    <polygon points="50 15, 100 100, 0 100" fill="yellow" />
+    <text x="50" y="70" font-size="20" fill="#000" text-anchor="middle" alignment-baseline="central">MOP</text>
+  </svg>
+    

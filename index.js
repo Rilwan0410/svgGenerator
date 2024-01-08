@@ -59,7 +59,6 @@ inquirer
   .then((data) => {
     let { textColorValue, textColorCode } = data;
     if (textColorCode == "Hexidecimal Number") {
-      console.log(textColorValue.split(""));
       data.textColorValue = data.textColorValue.split("");
       data.textColorValue.unshift("#");
       data.textColorValue = data.textColorValue.join("");
