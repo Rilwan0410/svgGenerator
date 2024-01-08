@@ -14,6 +14,6 @@ Fill in the required fields asking you how you would like to style your SVG. Onc
 
 ## Links
 
-Link to Video Demo: file:///Users/user/Downloads/Untitled_%20Jan%207,%202024%208_30%20PM.webm 
+Link to Video Demo: https://watch.screencastify.com/v/SbbL7uflHdJxYuuDl9Hz
 
 Link to GitHub Repo: https://github.com/Rilwan0410/svgGenerator 
