@@ -1,0 +1,6 @@
+
+    <svg  xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 100 100">
+    <polygon points="50 15, 100 100, 0 100" fill="orange" />
+    <text x="50" y="70" font-size="20" fill="black" text-anchor="middle" alignment-baseline="central">FLY</text>
+  </svg>
+    
